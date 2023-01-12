@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+
+
+
+.header{
+    
+    height: 20vh;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    position: relative;
+}
+footer{
+    grid-area: footer;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+
+}
+
+nav li a{
+    color: #42220c;
+    font-weight: 600;
+}
+
+nav{
+    margin-right: 35%;
+
+}
+
+.icon{
+    font-size: 30px;
+
+}
+
+
+.box {
+position: relative;
+flex: 50%;
+width: 100%;
+
+   
+}
+
+
+
+.box img{
+
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+
+}
+section .kutu{
+    width: 350px;
+    height: 450px;
+   
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+section .kutu h4{
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+section .kutu h2{
+    
+    text-align: center;
+}
+@media(max-width:1080px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+    }
+    
+    @media(max-width:991px){
+        .navbar{
+            padding: 15px 20px;
+        }
+        .icon{
+            display:initial ;
+            align-items: flex-end,;
+        }
+        .box{
+            z-index: -1;
+            padding: 4px;
+    
+        }
+    }
+    @media(max-width:727px){
+        .box{
+            margin-top: 60px;
+            size: 30px;
+            bottom: -500px;
+        }
+        
+        .icon{
+           justify-content: center;
+        }
+        img{
+            size: 10px;
+        }
+        .kutu{
+
+            margin-top: ;
+        }
+    } 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/icon.ico" type="img/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/kesfetmek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Keşfetmek</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                
+                <div class="logo">
+                 
+        <div id="YanMenu" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        
+          &times;</a>
+        
+          <a href="#">Şehirleri</a>
+          <a href="#">Hayvanlar</a>
+          <a href="#">Cografya</a>
+          <a href="#">Tarihce</a>
+          <a href="#">Hava durumu</a>
+
+        </div>
+        
+        
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu">
+        &#9776;
+        </span>
+                    <img src="img/go-to-africa-igc.png" alt="" width="120" height="120">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkinda.html">Hakkında</a></li>
+                        <li><a href="kesfetmek.html">Keşfetmek</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                    
+                </nav>
+                <div class="icon">
+                  <a class="fa-solid fa-language" href="discover.html"> </a>
+                  
+                 </div>
+             
+            </div>   
+        </div> 
+    </div> 
+     <main id="ana">
+      <section>
+      <img src="img/61e7bb8d4e3fe0098c616c06.webp">
+      <h2></h2>
+      </section>
+      <section>
+   <img src="img/africansafaris-20210326112538.jpg">
+      </section>
+      <section>
+  <img src="img/thumbs_b_c_04097cef212a343521a3faecc2864ed7.jpg">
+      </section>
+      <section>
+        <img src="img/çita.jpg">
+      </section>
+     </main>
+    <style>
+        .sidenav {
+          height: 90%;
+          width: 0; /*Genişliği javascriptle değiştir*/
+          position: fixed;
+          z-index: 1;
+          margin-top: 155px;
+          left: 15;
+          background-color: #111;
+          overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+          transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+          padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+          
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        /*Menüler üzerine gelince  renklerini değiştirin */
+        
+        .sidenav a:hover {
+          color: #f1f1f1; 
+        }
+        /*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0px;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 0px;
+        }
+        .menu{
+            margin-left: 15px;
+            
+        }
+
+        /* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+        sidenav stilini değiştirin 
+        (daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+        </head>
+        <body>
+      
+        
+        
+        <!-- javascript ile menuyu açma kapatma -->
+        
+        <script>
+        function openNav() {
+          document.getElementById("YanMenu").style.width = "250px";
+          document.getElementById("ana").style.marginLeft ="350px" ;
+          document.getElementById("ana").style.transition ="0.5s ease" ;
+        }
+        
+        function closeNav() {
+          document.getElementById("YanMenu").style.width = "0";
+          document.getElementById("ana").style.marginLeft ="0" ;
+          document.getElementById("ana").style.transition ="1s ease" ;
+        }
+        </script> 
+   
+</body>
+</html>
